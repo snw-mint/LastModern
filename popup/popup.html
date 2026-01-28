@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LastModern</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&family=Roboto+Flex:opsz,wght@8..144,300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    
+    <header>
+        <div class="brand">
+            <span class="text-gray">Last</span><span class="text-accent">Modern</span>
+        </div>
+        
+        <div id="controls-container">
+            <label class="material-toggle" title="Toggle Dark Mode">
+                <input type="checkbox" id="theme-toggle">
+                <div class="track">
+                    <div class="thumb">
+                        <div class="icon icon-sun">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g stroke-width="0"/><g stroke-linecap="round" stroke-linejoin="round"/><g stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 2v2m0 16v2M4 12H2m20 0h-2m-.222-7.777-2.222 2.031M4.222 4.223l2.222 2.031m0 11.302-2.222 2.222m15.556-.001-2.222-2.222" stroke-linecap="round"/></g></svg>
+                        </div>
+                        <div class="icon icon-moon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g stroke-width="0"/><g stroke-linecap="round" stroke-linejoin="round"/><path d="m21.067 11.857-.642-.388zm-8.924-8.924-.388-.642zM21.25 12A9.25 9.25 0 0 1 12 21.25v1.5c5.937 0 10.75-4.813 10.75-10.75zM12 21.25A9.25 9.25 0 0 1 2.75 12h-1.5c0 5.937 4.813 10.75 10.75 10.75zM2.75 12A9.25 9.25 0 0 1 12 2.75v-1.5C6.063 1.25 1.25 6.063 1.25 12zm12.75 2.25A5.75 5.75 0 0 1 9.75 8.5h-1.5a7.25 7.25 0 0 0 7.25 7.25zm4.925-2.781A5.75 5.75 0 0 1 15.5 14.25v1.5a7.25 7.25 0 0 0 6.21-3.505zM9.75 8.5a5.75 5.75 0 0 1 2.781-4.925l-.776-1.284A7.25 7.25 0 0 0 8.25 8.5zM12 2.75a.38.38 0 0 1-.268-.118.3.3 0 0 1-.082-.155c-.004-.031-.002-.121.105-.186l.776 1.284c.503-.304.665-.861.606-1.299-.062-.455-.42-1.026-1.137-1.026zm9.71 9.495c-.066.107-.156.109-.187.105a.3.3 0 0 1-.155-.082.38.38 0 0 1-.118-.268h1.5c0-.717-.571-1.075-1.026-1.137-1.026-1.137-.438-.059-.995.103-1.299.606z" fill="currentColor"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <div id="settings-view">
+            <p class="status-text">Interface Settings</p>
+        </div>
+
+        <div id="redirect-view" style="display: none;">
+            <p class="status-text">Extension inactive</p>
+            <p class="info-text">Go to Last.fm to use Modernizer.</p>
+            <button id="open-site-btn">Open Last.fm</button>
+        </div>
+    </main>
+
+    <footer>
+        <span class="version">v1.0.0</span>
+        <span class="author-text">
+            by <a href="https://github.com/snw-mint" target="_blank" class="author-link">Snow Mint</a>
+        </span>
+        <a href="https://github.com/snw-mint/last-modern" target="_blank" class="github-link" title="GitHub Repository">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.065 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.285 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+        </a>
+    </footer>
+
+    <script src="popup.js"></script>
+</body>
+</html>

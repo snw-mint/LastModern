@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "LastModern",
+  "version": "1.0",
+  "description": "A browser extension to modernize the last.fm website ✨",
+  "permissions": ["storage"],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "LastModern",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.last.fm/*"],
+      "css": [
+        "css/variables.css",
+        "css/base.css",
+        "css/layout.css",
+        "css/components.css"
+      ],
+      "js": [
+        "js/theme-manager.js",
+        "js/icon-map.js",
+        "js/content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/*.png"],
+      "matches": ["*://*.last.fm/*"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "modernizer@lastfm.local"
+    }
+  }
+}

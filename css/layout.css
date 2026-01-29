@@ -217,37 +217,17 @@ ul#tracks_range select {
     padding: 5px 10px !important;
 }
 body.hide-loved .secondary-nav-item-link[href$="/loved"] { display: none !important; }
-
-/* Obsessions */
 body.hide-obsessions .secondary-nav-item-link[href$="/obsessions"] { display: none !important; }
-
-/* Events */
 body.hide-events .secondary-nav-item-link[href$="/events"] { display: none !important; }
-
-/* Neighbours */
 body.hide-neighbours .secondary-nav-item-link[href$="/neighbours"] { display: none !important; }
-
-/* Tags */
 body.hide-tags .secondary-nav-item-link[href$="/tags"] { display: none !important; }
-
-/* Shouts (Remove a aba E a caixa de comentários inteira) */
-body.hide-shouts .secondary-nav-item-link[href$="#shoutbox"], /* Link do menu */
-body.hide-shouts #shoutbox, /* Caixa de comentários */
+body.hide-shouts .secondary-nav-item-link[href$="#shoutbox"], 
+body.hide-shouts #shoutbox,
 body.hide-shouts .shoutbox-wrapper { 
     display: none !important; 
 }
-
-/* Followers */
 body.hide-followers .secondary-nav-item-link[href$="/followers"] { display: none !important; }
-
-/* Following */
 body.hide-following .secondary-nav-item-link[href$="/following"] { display: none !important; }
-
-/* Playlists */
 body.hide-playlists .secondary-nav-item-link[href$="/playlists"] { display: none !important; }
-
-/* Library */
 body.hide-library .secondary-nav-item-link[href$="/library"] { display: none !important; }
-
-/* Reposts (Embora raro no layout atual, garantimos pelo href) */
 body.hide-reposts .secondary-nav-item-link[href$="/reposts"] { display: none !important; }

@@ -103,3 +103,116 @@ body.modernizer-dark-mode .chartlist-row--now-scrobbling {
         color: #ffffff !important;
     }
 }
+.grid-items {
+    margin-left: -10px !important;
+    margin-right: -10px !important;
+    width: calc(100% + 20px) !important;
+}
+.grid-items-item {
+    box-sizing: border-box !important;
+    padding: 10px !important;
+    margin: 0 !important;
+}
+.grid-items-item-details {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+input[type="checkbox"] {
+    accent-color: var(--lm-accent, #e62929) !important;
+    cursor: pointer;
+}
+input[type="radio"] {
+    accent-color: var(--lm-accent, #e62929) !important;
+    cursor: pointer;
+}
+.auth-avatar-desktop {
+    border-radius: 10% !important;
+}
+a.auth-upgrade-cta {
+    display: none !important;
+}
+form#recent-tracks-settings,
+form#artist-chart-settings,
+form#albums-chart-settings,
+form#track-chart-settings,
+div#share-library-artist,
+div#share-library-album,
+div#share-library-track,
+ul.navlist-hidden-list,
+.auth-dropdown-menu,
+ul#artists_range,
+ul#albums_range,
+ul#tracks_range {
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    border: 1px solid var(--lm-border) !important;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.15) !important;
+}
+a.auth-logout-cta.js-logout-button {
+    border-radius: 10px !important;
+    margin: 5px !important;
+    width: auto !important;
+}
+body.modernizer-dark-mode {
+    form#recent-tracks-settings,
+    form#artist-chart-settings,
+    form#albums-chart-settings,
+    form#track-chart-settings,
+    div#share-library-artist,
+    div#share-library-album,
+    div#share-library-track,
+    ul.navlist-hidden-list,
+    .auth-dropdown-menu,
+    ul#artists_range,
+    ul#albums_range,
+    ul#tracks_range {
+        background-color: var(--lm-card-bg, #1f1f1f) !important;
+        color: var(--lm-text, #eeeeee) !important;
+        background-image: none !important;
+        background: var(--lm-card-bg, #1f1f1f) !important;
+        border: 1px solid var(--lm-border, #333) !important;
+        box-shadow: 0 4px 15px rgb(0 0 0 / 0.5) !important;
+    }
+    .auth-dropdown-menu a,
+    ul.navlist-hidden-list a,
+    ul#artists_range li a,
+    ul#albums_range li a,
+    ul#tracks_range li a {
+        color: var(--lm-text, #eeeeee) !important;
+    }
+    .auth-dropdown-menu-item:hover,
+    .auth-dropdown-menu-item a:hover,
+    ul.navlist-hidden-list li:hover,
+    ul.navlist-hidden-list a:hover,
+    ul#artists_range li a:hover,
+    ul#albums_range li a:hover,
+    ul#tracks_range li a:hover {
+        background-color: #2a2a2a !important;
+        color: var(--lm-accent, #e62929) !important;
+        text-decoration: none !important;
+    }
+    .auth-dropdown-profile {
+        background-color: var(--lm-card-bg, #1f1f1f) !important;
+        border-bottom: 1px solid var(--lm-border, #333) !important;
+    }
+    a.auth-logout-cta.js-logout-button {
+        background-color: var(--lm-card-bg, #1f1f1f) !important;
+        color: var(--lm-text, #eeeeee) !important;
+        border: 1px solid var(--lm-border, #333) !important;
+    }
+}
+form#recent-tracks-settings select,
+form#artist-chart-settings select,
+form#albums-chart-settings select,
+form#track-chart-settings select,
+div#share-library-artist select,
+div#share-library-album select,
+div#share-library-track select,
+ul#artists_range select,
+ul#albums_range select,
+ul#tracks_range select {
+    border-radius: 10px !important;
+    cursor: pointer !important;
+    border: 1px solid var(--lm-border) !important;
+    padding: 5px 10px !important;
+}

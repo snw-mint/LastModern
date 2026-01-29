@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&family=Roboto+Flex:opsz,wght@8..144,300;400;500;600&display=swap);
+:root {
+    --lm-accent: #e62929;
+    --lm-font-title: "Inter", sans-serif;
+    --lm-font-text: "Roboto Flex", sans-serif;
+    --lm-bg: initial;
+    --lm-text: initial;
+    --lm-card-bg: initial;
+}
+body.modernizer-dark-mode {
+    --lm-bg: #141414;
+    --lm-text: #eeeeee;
+    --lm-card-bg: #1f1f1f;
+    --lm-border: #2a2a2a;
+    background-color: var(--lm-bg) !important;
+    color: var(--lm-text) !important;
+}

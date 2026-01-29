@@ -74,3 +74,32 @@ textarea,
 .dialog-content {
     border-radius: var(--lm-radius) !important;
 }
+.chartlist-row::after,
+.chartlist-break::after {
+    border-bottom: none !important;
+    display: none !important;
+}
+.chartlist-row--now-scrobbling {
+    background-color: rgb(230 41 41 / 0.08) !important;
+    border: 1px solid var(--lm-accent) !important;
+    border-radius: var(--lm-radius) !important;
+    background-image: none !important;
+    .chartlist-name a,
+    .chartlist-artist a,
+    .chartlist-timestamp {
+        color: #000000 !important;
+        font-weight: 700 !important;
+    }
+    .chartlist-now-scrobbling-icon {
+        filter: sepia(1) saturate(1000%) hue-rotate(-50deg) !important;
+        opacity: 1 !important;
+    }
+}
+body.modernizer-dark-mode .chartlist-row--now-scrobbling {
+    background-color: rgb(230 41 41 / 0.2) !important;
+    .chartlist-name a,
+    .chartlist-artist a,
+    .chartlist-timestamp {
+        color: #ffffff !important;
+    }
+}

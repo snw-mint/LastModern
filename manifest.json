@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "LastModern",
-  "version": "1.0",
+  "version": "0.2",
   "description": "A browser extension to modernize the last.fm website ✨",
   "permissions": ["storage", "tabs"],
   "background": {

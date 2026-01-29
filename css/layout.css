@@ -1,0 +1,76 @@
+.cover-art img,
+.chartlist-image img,
+.grid-items-cover-image img,
+.library-album-image,
+.image-list-item img,
+.video-preview,
+.album-overview-cover-art,
+.music-releases-item-image,
+.reference-media-item-image {
+    border-radius: var(--lm-radius) !important;
+}
+.image-overlay,
+.grid-items-cover-image .image-overlay,
+.play-button-circle {
+    border-radius: var(--lm-radius) !important;
+}
+.artist-header-image,
+.artist-header-image img,
+.big-artist-list-item img {
+    border-radius: var(--lm-radius) !important;
+}
+.auth-avatar-desktop,
+.masthead-nav-control img {
+    border-radius: var(--lm-radius-avatar) !important;
+}
+.user-header-avatar img,
+.header-avatar img {
+    border-radius: var(--lm-radius-avatar) !important;
+    box-shadow: none !important;
+}
+.avatar img,
+.user-list-avatar img,
+.shout-user-avatar img,
+.personal-stats-avatar img,
+.listeners-section-item-wrap img {
+    border-radius: var(--lm-radius-avatar) !important;
+}
+a.avatar,
+.user-list-avatar {
+    border-radius: var(--lm-radius-avatar) !important;
+}
+.btn-primary,
+.btn-secondary,
+.header-new-play-button,
+.header-new-more-button {
+    border-radius: var(--lm-radius-sm) !important;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+.search-field,
+textarea,
+.search-submit {
+    border-radius: var(--lm-radius-sm) !important;
+}
+.sidebar-group,
+.features-footer,
+.wiki-content,
+.api-session,
+.stationlink-list,
+.shoutbox,
+.about-me-sidebar {
+    border-radius: var(--lm-radius) !important;
+    overflow: hidden;
+}
+.chartlist-row {
+    border-radius: var(--lm-radius);
+}
+.tag a,
+.tags-list a {
+    border-radius: var(--lm-radius-sm) !important;
+}
+.modal-dialog,
+.dialog-content {
+    border-radius: var(--lm-radius) !important;
+}

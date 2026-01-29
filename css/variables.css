@@ -3,15 +3,22 @@
     --lm-accent: #e62929;
     --lm-font-title: "Inter", sans-serif;
     --lm-font-text: "Roboto Flex", sans-serif;
+    --lm-radius: 6px;
+    --lm-radius-sm: 4px;
+    --lm-radius-avatar: 18px;
     --lm-bg: initial;
+    --lm-bg-alt: initial;
     --lm-text: initial;
-    --lm-card-bg: initial;
+    --lm-text-muted: initial;
+    --lm-border: initial;
 }
 body.modernizer-dark-mode {
     --lm-bg: #141414;
+    --lm-bg-alt: #1f1f1f;
+    --lm-bg-hover: #2a2a2a;
     --lm-text: #eeeeee;
-    --lm-card-bg: #1f1f1f;
-    --lm-border: #2a2a2a;
+    --lm-text-muted: #a0a0a0;
+    --lm-border: #333333;
     background-color: var(--lm-bg) !important;
     color: var(--lm-text) !important;
 }

@@ -221,9 +221,8 @@ body.hide-obsessions .secondary-nav-item-link[href$="/obsessions"] { display: no
 body.hide-events .secondary-nav-item-link[href$="/events"] { display: none !important; }
 body.hide-neighbours .secondary-nav-item-link[href$="/neighbours"] { display: none !important; }
 body.hide-tags .secondary-nav-item-link[href$="/tags"] { display: none !important; }
-body.hide-shouts .secondary-nav-item-link[href$="#shoutbox"], 
-body.hide-shouts #shoutbox,
-body.hide-shouts .shoutbox-wrapper { 
+body.hide-shouts .secondary-nav-item-link[href$="#shoutbox"],
+body.hide-shouts .secondary-nav-item-link[href$="/shoutbox"] { 
     display: none !important; 
 }
 body.hide-followers .secondary-nav-item-link[href$="/followers"] { display: none !important; }

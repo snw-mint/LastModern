@@ -43,3 +43,42 @@ document.addEventListener("DOMContentLoaded", () => {
         chrome.tabs.create({ url: "https://www.last.fm/home" });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Lista de IDs dos checkboxes que criamos
+    const toggles = [
+        'hide-loved', 'hide-obsessions', 'hide-events', 'hide-neighbours', 
+        'hide-tags', 'hide-shouts', 'hide-followers', 'hide-following', 
+        'hide-playlists', 'hide-library'
+    ];
+
+    // 1. Carregar estado salvo
+    chrome.storage.local.get(toggles, (result) => {
+        toggles.forEach(id => {
+            if (result[id]) {
+                document.getElementById(id).checked = true;
+            }
+        });
+    });
+
+    // 2. Salvar quando clicar e aplicar instantaneamente
+    toggles.forEach(id => {
+        document.getElementById(id).addEventListener('change', (e) => {
+            const isChecked = e.target.checked;
+            
+            // Salva no storage
+            chrome.storage.local.set({ [id]: isChecked });
+
+            // Envia mensagem para a aba ativa atualizar o CSS
+            chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+                if (tabs[0]) {
+                    chrome.tabs.sendMessage(tabs[0].id, { 
+                        action: 'updateVisibility', 
+                        setting: id, 
+                        value: isChecked 
+                    });
+                }
+            });
+        });
+    });
+});

@@ -34,15 +34,102 @@
     </header>
 
     <main>
-        <div id="settings-view">
-            <p class="status-text">Interface Settings</p>
-        </div>
-
         <div id="redirect-view" style="display: none;">
             <p class="status-text">Extension inactive</p>
             <p class="info-text">Go to Last.fm to use Modernizer.</p>
             <button id="open-site-btn">Open Last.fm</button>
         </div>
+
+        <div class="settings-group collapsible-wrapper">
+    
+    <button id="toggle-profile-tabs" class="collapsible-header">
+        <span>Esconder abas</span>
+        <span class="icon-arrow">▼</span>
+    </button>
+
+    <div class="collapsible-content" id="profile-tabs-content">
+        
+        <div class="toggle-row">
+            <span>Loved Tracks</span>
+            <label class="mini-toggle">
+                <input type="checkbox" id="hide-loved">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="toggle-row">
+            <span>Obsessions</span>
+            <label class="mini-toggle">
+                <input type="checkbox" id="hide-obsessions">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="toggle-row">
+            <span>Events</span>
+            <label class="mini-toggle">
+                <input type="checkbox" id="hide-events">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="toggle-row">
+            <span>Neighbours</span>
+            <label class="mini-toggle">
+                <input type="checkbox" id="hide-neighbours">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="toggle-row">
+            <span>Tags</span>
+            <label class="mini-toggle">
+                <input type="checkbox" id="hide-tags">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="toggle-row">
+            <span>Shouts</span>
+            <label class="mini-toggle">
+                <input type="checkbox" id="hide-shouts">
+                <span class="slider"></span>
+            </label>
+        </div>
+        
+        <div class="toggle-row">
+            <span>Followers</span>
+            <label class="mini-toggle">
+                <input type="checkbox" id="hide-followers">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="toggle-row">
+            <span>Following</span>
+            <label class="mini-toggle">
+                <input type="checkbox" id="hide-following">
+                <span class="slider"></span>
+            </label>
+        </div>
+        
+        <div class="toggle-row">
+            <span>Playlists</span>
+            <label class="mini-toggle">
+                <input type="checkbox" id="hide-playlists">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="toggle-row">
+            <span>Library</span>
+            <label class="mini-toggle">
+                <input type="checkbox" id="hide-library">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+</div>
     </main>
 
     <footer>

@@ -213,3 +213,111 @@ footer {
 #open-site-btn:active {
     transform: scale(0.98);
 }
+/* --- 1. ACCORDION (ABRIR E FECHAR) --- */
+.collapsible-wrapper {
+    border-bottom: 1px solid #333; /* Separador sutil */
+}
+
+.collapsible-header {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    padding: 15px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+}
+
+.collapsible-header:hover {
+    color: #e62929; /* Hover vermelho */
+}
+
+/* Ícone da seta girando */
+.icon-arrow {
+    font-size: 10px;
+    transition: transform 0.3s ease;
+}
+
+.collapsible-header.active .icon-arrow {
+    transform: rotate(180deg); /* Gira a seta quando aberto */
+    color: #e62929;
+}
+
+/* Conteúdo escondido por padrão */
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding-left: 10px; /* Indentação leve */
+}
+
+.toggle-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 13px;
+    color: #ccc;
+}
+
+
+/* --- 2. MINI TOGGLES (INTERRUPTORES) --- */
+.mini-toggle {
+    position: relative;
+    display: inline-block;
+    width: 32px;  /* Largura mini */
+    height: 18px; /* Altura mini */
+}
+
+.mini-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #444; /* Cor Desligado */
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px; /* Tamanho da bolinha */
+    width: 12px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+/* Estado: Ligado */
+input:checked + .slider {
+    background-color: #e62929; /* Cor Vermelha Last.fm */
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px); /* Move a bolinha */
+}
+
+/* Hover no Toggle */
+.mini-toggle:hover .slider {
+    background-color: #555;
+}
+input:checked:hover + .slider {
+    background-color: #ff4444;
+}

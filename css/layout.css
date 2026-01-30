@@ -302,3 +302,154 @@ body.hide-reposts .secondary-nav-item-link[href*="/reposts"] {
         gap: 6px !important;
     }
 }
+.more-link a {
+    color: var(--lm-accent) !important;
+    font-weight: 700 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    text-decoration: none !important;
+}
+.more-link a:hover {
+    color: var(--lm-text) !important;
+    text-decoration: underline !important;
+}
+.more-link a::before,
+.more-link a::after {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+}
+.custom-arrow-icon {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    transition: transform 0.2s ease;
+}
+.more-link a:hover .custom-arrow-icon {
+    transform: translateX(4px);
+}
+.has-custom-icon {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    border: none !important;
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 14px !important;
+    line-height: 1 !important;
+    text-indent: 0 !important;
+    letter-spacing: normal !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.section-settings-toggle {
+    width: 28px !important;
+    height: 28px !important;
+    color: #444444 !important;
+    transition:
+        color 0.2s ease,
+        transform 0.4s ease !important;
+}
+.section-settings-toggle::before,
+.section-settings-toggle::after {
+    display: none !important;
+    content: none !important;
+}
+.custom-settings-icon {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor !important;
+    stroke-width: 1.5px !important;
+}
+.section-settings-toggle:hover {
+    color: var(--lm-accent) !important;
+}
+.section-settings-toggle:hover .custom-settings-icon {
+    transform: rotate(90deg);
+}
+.has-custom-icon {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    border: none !important;
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 1 !important;
+    text-indent: 0 !important;
+    letter-spacing: normal !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.section-settings-toggle {
+    width: 28px !important;
+    height: 28px !important;
+    color: #444444 !important;
+    transition: color 0.2s ease !important;
+    position: relative;
+    top: 1px;
+}
+.section-settings-toggle::before,
+.section-settings-toggle::after {
+    display: none !important;
+    content: none !important;
+}
+.custom-settings-icon {
+    width: 18px !important;
+    height: 18px !important;
+    stroke: currentColor !important;
+    stroke-width: 1.5px !important;
+    transform-origin: center center !important;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.section-settings-toggle:hover {
+    color: var(--lm-accent) !important;
+}
+.section-settings-toggle:hover .custom-settings-icon {
+    transform: rotate(90deg);
+}
+.share-chart .share-button-profile {
+    position: absolute !important;
+    right: 26px !important;
+    top: 0 !important;
+    color: #444444 !important;
+    font-size: 0 !important;
+    width: 28px !important;
+    height: 28px !important;
+    min-width: 28px !important;
+    z-index: 10 !important;
+    opacity: 1 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.share-button-profile::before,
+.share-button-profile::after {
+    display: none !important;
+    content: none !important;
+}
+.custom-share-icon {
+    width: 18px !important;
+    height: 18px !important;
+    stroke: currentColor !important;
+    stroke-width: 1.5px !important;
+    transition: transform 0.2s ease;
+}
+.share-chart .share-button-profile:hover {
+    color: var(--lm-accent) !important;
+}
+.share-chart .share-button-profile:hover .custom-share-icon {
+    transform: scale(1.1);
+}
+body.modernizer-dark-mode .section-settings-toggle,
+body.modernizer-dark-mode .share-chart .share-button-profile {
+    color: #ffffff !important;
+}
+body.modernizer-dark-mode .section-settings-toggle:hover,
+body.modernizer-dark-mode .share-chart .share-button-profile:hover {
+    color: var(--lm-accent) !important;
+}

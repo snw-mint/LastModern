@@ -453,3 +453,30 @@ body.modernizer-dark-mode .section-settings-toggle:hover,
 body.modernizer-dark-mode .share-chart .share-button-profile:hover {
     color: var(--lm-accent) !important;
 }
+.chartlist-count-bar-slug {
+    background-color: var(--lm-accent) !important;
+    border-radius: 10px !important;
+    transition: all 0.2s ease !important;
+    opacity: 1 !important;
+}
+.chartlist-count-bar-slug:hover {
+    background-color: #bf2323 !important;
+    text-decoration: none !important;
+}
+.chartlist-count-bar-slug span,
+.chartlist-count-bar-slug a {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    text-shadow: 0 1px 2px rgb(0 0 0 / 0.3) !important;
+    border: none !important;
+}
+.chartlist-count-bar-link {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+}
+.profile-cards-spinner {
+    display: none !important;
+}
+.loading {
+    display: none !important;
+}

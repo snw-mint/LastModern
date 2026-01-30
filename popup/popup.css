@@ -25,8 +25,9 @@ html {
 }
 body {
     width: 320px;
-    height: auto;
-    min-height: 150px;
+    max-height: 580px;
+    overflow-y: auto;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     background-color: var(--bg-color);
@@ -303,4 +304,31 @@ input:checked + .slider {
 }
 input:checked + .slider:before {
     transform: translateX(16px);
+}
+html,
+body {
+    width: 320px;
+    margin: 0;
+    padding: 0;
+    max-height: 600px !important;
+    overflow-y: auto;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-color, #ffffff);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color, #e62929);
+    border-radius: 4px;
+    border: 2px solid var(--bg-color, #ffffff);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #f44;
+}
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-color, #e62929) var(--bg-color, #ffffff);
 }

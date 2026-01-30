@@ -4,8 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const controlsContainer = document.getElementById("settings-view");
     const redirectView = document.getElementById("redirect-view");
     const openSiteBtn = document.getElementById("open-site-btn");
-    const accordionHeader = document.getElementById("toggle-profile-tabs");
-    const accordionContent = document.getElementById("profile-tabs-content");
     function updatePopupTheme(isDark) {
         htmlElement.setAttribute("data-theme", isDark ? "dark" : "light");
     }
@@ -51,16 +49,22 @@ document.addEventListener("DOMContentLoaded", () => {
             chrome.tabs.create({ url: "https://www.last.fm/home" });
         });
     }
-    if (accordionHeader && accordionContent) {
-        accordionHeader.addEventListener("click", () => {
-            accordionHeader.classList.toggle("active");
-            if (accordionContent.style.maxHeight) {
-                accordionContent.style.maxHeight = null;
-            } else {
-                accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
-            }
-        });
+    function setupAccordion(headerId, contentId) {
+        const header = document.getElementById(headerId);
+        const content = document.getElementById(contentId);
+        if (header && content) {
+            header.addEventListener("click", () => {
+                header.classList.toggle("active");
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
     }
+    setupAccordion("toggle-profile-tabs", "profile-tabs-content");
+    setupAccordion("toggle-sidebar-sections", "sidebar-sections-content");
     const toggles = [
         "hide-loved",
         "hide-obsessions",
@@ -72,6 +76,12 @@ document.addEventListener("DOMContentLoaded", () => {
         "hide-following",
         "hide-playlists",
         "hide-library",
+        "hide-about",
+        "hide-station-links",
+        "hide-reports",
+        "hide-labs",
+        "hide-shoutbox-section",
+        "hide-ads",
     ];
     chrome.storage.local.get(toggles, (result) => {
         toggles.forEach((id) => {

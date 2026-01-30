@@ -480,3 +480,38 @@ body.modernizer-dark-mode .share-chart .share-button-profile:hover {
 .loading {
     display: none !important;
 }
+body.hide-about section.about-me-sidebar {
+    display: none !important;
+}
+body.hide-station-links section.stationlinks {
+    display: none !important;
+}
+body.hide-reports section.promo-v3 {
+    display: none !important;
+}
+body.hide-labs section.labs-cta {
+    display: none !important;
+}
+body.hide-ads p.mpu-subscription-upsell {
+    display: none !important;
+}
+body.hide-shoutbox-section div#shoutbox,
+body.hide-shoutbox-section .shoutbox-wrapper {
+    display: none !important;
+}
+body.force-full-width .col-sidebar {
+    display: none !important;
+}
+body.force-full-width .col-main {
+    width: 100% !important;
+    float: none !important;
+    max-width: none !important;
+    padding-right: 0 !important;
+}
+body.force-full-width .grid-items {
+    grid-template-columns: repeat(auto-fill, minmax(125px, 1fr)) !important;
+    gap: 12px !important;
+}
+body.force-full-width .container {
+    max-width: 1400px !important;
+}

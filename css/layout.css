@@ -621,3 +621,26 @@ body.modernizer-dark-mode .custom-profile-icon {
 .has-custom-icon[aria-current="page"] .custom-profile-icon {
     color: var(--lm-accent) !important;
 }
+.label.user-status-subscriber {
+    background-color: #FFBB00 !important;
+    color: #000000 !important;
+    font-weight: bold !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+.label.user-status-subscriber::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 20%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: rotate(30deg);
+    animation: shimmer 3s infinite;
+}
+@keyframes shimmer {
+    0% { left: -60%; }
+    20% { left: 120%; }
+    100% { left: 120%; }
+}

@@ -644,3 +644,10 @@ body.modernizer-dark-mode .custom-profile-icon {
     20% { left: 120%; }
     100% { left: 120%; }
 }
+section.promo-v3 .listening-report-promo,
+.promo-v3 .listening-report-promo {
+    background-color: var(--lm-card-bg) !important;
+    background-image: none !important; 
+    border-radius: 15px !important;
+    border: 1px solid var(--lm-border) !important;
+}

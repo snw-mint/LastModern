@@ -10,10 +10,15 @@
     --lm-bg-alt: initial;
     --lm-text: initial;
     --lm-text-muted: initial;
-    --lm-border: initial;
+    --lm-border: initial;--lm-bg: #ffffff;
+    --lm-card-bg: #f7f7f7; 
+    --lm-border: #eeeeee;
+    --lm-text: #333333;
+    --lm-text-muted: #757575;
 }
 body.modernizer-dark-mode {
     --lm-bg: #141414;
+    --lm-card-bg: #1f1f1f;
     --lm-bg-alt: #1f1f1f;
     --lm-bg-hover: #2a2a2a;
     --lm-text: #eeeeee;

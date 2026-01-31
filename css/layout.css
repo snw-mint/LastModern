@@ -322,64 +322,59 @@ body.hide-reposts .secondary-nav-item-link[href*="/reposts"] {
     transform: translateX(4px);
 }
 .section-settings-toggle {
-    width: 28px !important;
-    height: 28px !important;
-    color: #444444 !important;
-    transition: color 0.2s ease !important;
-    position: relative;
-    top: 1px;
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+    width: 20px !important;
+    height: 20px !important;
+    opacity: 1 !important;
+    color: #555555 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: transparent !important;
+    border: none !important;
 }
-.section-settings-toggle::before,
-.section-settings-toggle::after {
+.section-settings-toggle::before {
     display: none !important;
     content: none !important;
-}
-.custom-settings-icon {
-    width: 18px !important;
-    height: 18px !important;
-    stroke: currentColor !important;
-    stroke-width: 1.5px !important;
-    transform-origin: center center !important;
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
-}
-.section-settings-toggle:hover {
-    color: var(--lm-accent) !important;
-}
-.section-settings-toggle:hover .custom-settings-icon {
-    transform: rotate(90deg);
 }
 .share-chart .share-button-profile {
     position: absolute !important;
-    right: 26px !important;
     top: 0 !important;
-    color: #444444 !important;
-    font-size: 0 !important;
-    width: 28px !important;
-    height: 28px !important;
-    min-width: 28px !important;
-    z-index: 10 !important;
+    right: 26px !important;
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+    width: 20px !important;
+    height: 20px !important;
     opacity: 1 !important;
-    display: inline-flex !important;
+    color: #555555 !important;
+    font-size: 0 !important;
+    display: flex !important;
     align-items: center !important;
     justify-content: center !important;
 }
-.share-button-profile::before,
-.share-button-profile::after {
+.share-chart .share-button-profile::before {
     display: none !important;
     content: none !important;
 }
+.custom-settings-icon,
 .custom-share-icon {
     width: 18px !important;
     height: 18px !important;
     stroke: currentColor !important;
     stroke-width: 1.5px !important;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease !important;
 }
+.section-settings-toggle:hover,
 .share-chart .share-button-profile:hover {
     color: var(--lm-accent) !important;
 }
+.section-settings-toggle:hover .custom-settings-icon,
 .share-chart .share-button-profile:hover .custom-share-icon {
-    transform: scale(1.1);
+    transform: scale(1.1) !important;
 }
 body.modernizer-dark-mode .section-settings-toggle,
 body.modernizer-dark-mode .share-chart .share-button-profile {
@@ -622,7 +617,7 @@ body.modernizer-dark-mode .custom-profile-icon {
     color: var(--lm-accent) !important;
 }
 .label.user-status-subscriber {
-    background-color: #FFBB00 !important;
+    background-color: #ffbb00 !important;
     color: #000000 !important;
     font-weight: bold !important;
     position: relative !important;
@@ -635,19 +630,25 @@ body.modernizer-dark-mode .custom-profile-icon {
     left: -60%;
     width: 20%;
     height: 200%;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgb(255 255 255 / 0.4);
     transform: rotate(30deg);
     animation: shimmer 3s infinite;
 }
 @keyframes shimmer {
-    0% { left: -60%; }
-    20% { left: 120%; }
-    100% { left: 120%; }
+    0% {
+        left: -60%;
+    }
+    20% {
+        left: 120%;
+    }
+    100% {
+        left: 120%;
+    }
 }
 section.promo-v3 .listening-report-promo,
 .promo-v3 .listening-report-promo {
     background-color: var(--lm-card-bg) !important;
-    background-image: none !important; 
+    background-image: none !important;
     border-radius: 15px !important;
     border: 1px solid var(--lm-border) !important;
 }
